@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JP Reader – VN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1>JP Reader</h1>
+
+  <textarea
+    id="japaneseInput"
+    placeholder="Pega aquí la frase en japonés"
+    rows="4"
+  ></textarea>
+
+  <br />
+
+  <button id="analyzeBtn">Analizar</button>
+<button id="clearBtn">Borrar</button>
+
+  <div id="readingArea"></div>
+
+  <hr />
+
+  <h2>Guardados</h2>
+  <ul id="savedUnits"></ul>
+
+  <script src="kuromoji.js"></script>
+  <script src="storage.js"></script>
+  <script src="units.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
