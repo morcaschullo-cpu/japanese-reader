@@ -3,7 +3,15 @@ const analyzeBtn = document.getElementById("analyzeBtn");
 const readingArea = document.getElementById("readingArea");
 const savedList = document.getElementById("savedUnits");
 const clearBtn = document.getElementById("clearBtn");
+const openRulesEditorBtn = document.getElementById("openRulesEditor");
 let tokenizer = null;
+
+/* =========================
+   ABRIR EDITOR DE REGLAS
+   ========================= */
+openRulesEditorBtn.addEventListener("click", () => {
+  rulesEditor.open();
+});
 
 /* =========================
    LIMPIAR INPUT

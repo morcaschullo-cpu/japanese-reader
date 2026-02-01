@@ -9,18 +9,24 @@
 
 <body>
 
-  <h1>JP Reader</h1>
+  <header>
+    <h1>JP Reader</h1>
+    <p class="subtitle">Analizador de texto japones con reglas personalizables</p>
+  </header>
 
-  <textarea
-    id="japaneseInput"
-    placeholder="Pega aquí la frase en japonés"
-    rows="4"
-  ></textarea>
+  <section class="input-section">
+    <textarea
+      id="japaneseInput"
+      placeholder="Pega aqui la frase en japones"
+      rows="4"
+    ></textarea>
 
-  <br />
-
-  <button id="analyzeBtn">Analizar</button>
-<button id="clearBtn">Borrar</button>
+    <div class="button-row">
+      <button id="analyzeBtn" class="btn-primary">Analizar</button>
+      <button id="clearBtn" class="btn-secondary">Borrar</button>
+      <button id="openRulesEditor" class="btn-rules">Editar Reglas</button>
+    </div>
+  </section>
 
   <div id="readingArea"></div>
 
@@ -31,7 +37,8 @@
 
   <script src="kuromoji.js"></script>
   <script src="storage.js"></script>
-  <script src="units.js"></script>
+  <script src="rules-engine.js"></script>
+  <script src="rules-editor.js"></script>
   <script src="app.js"></script>
 
 </body>
